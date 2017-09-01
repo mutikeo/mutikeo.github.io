@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace');
+
+body {
+	line-height: 0;
+}
+
+.min-w-50p {
+	min-width: 50%;
+}
+
+.wsms {
+	background: #344B9A;
+	color: #fff;
+	padding: 0;
+}
+
+.hardwriting {
+	font-family: 'Covered By Your Grace', cursive;
+    font-size: 26px;
+    line-height: 1.8;
+    margin-left: 15px;
+}
+
+h1.with-logo {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 70px;
+	margin: 2px;
+}
+
+h1.with-logo:before {
+	content: '';
+	background: url(../images/logo.png);
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-top: 6px;
+	margin-left: -18px;
+}
+
+.wsms-tep {
+	background: #55B74E;
+	color: #fff;
+	padding: 0;
+}
+
+.wsms .image-side,
+.wsms-tep .image-side {
+	position: relative;
+}
+
+.wsms button.btn, .wsms button.btn:active {
+	background-color: #55B74E;
+	color: #fff;
+}
+
+.wsms-tep button.btn, .wsms-tep button.btn:active {
+	background-color: #344B9A;
+	color: #fff;
+}
+
+.wsms button.btn ,
+.wsms-tep button.btn {
+	text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 16px;
+}
+
+.wsms .text-side h3,
+.wsms-tep .text-side h3 {
+	font-weight: 300;
+	font-size: 30px;
+	margin: 0;
+}
+
+.text-side {
+	height: 250px;
+	padding: 20px 40px 10px 40px;
+}
+
+/* New way */
+.image-side .triangle {
+	width: 100%;
+}
+
+.image-side .img {
+	width: 100%;
+	display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+.image-side .img.img-left {
+	background-image: url('../images/2.jpg');
+}
+
+.image-side .img.img-right {
+	background-image: url('../images/1.jpg');
+}
+
+.triangle {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.triangle.bottom:before,
+.triangle.top:after {
+   	content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 135px;
+    transform: skewY(5deg);
+}
+
+.triangle.bottom:before {
+    background: #344B9A;
+    top: -20%;
+}
+.triangle.top:after {
+    background: #55B74E;
+    bottom: -20%;
+}
+
+.group-btn {
+	margin-top: 10px;
+}
+
+.group-btn-2rows p {
+	margin-bottom: 0;
+}
+
+.group-btn-2rows .hardwriting {
+	line-height: 1;
+}
+
+@media( max-width: 767px ) {
+	.wsms-tep {
+		margin-top: 20px;
+	}
+
+	.wsms button.btn, .wsms-tep button.btn {
+	    font-size: 14px;
+	    padding: 8px 12px;
+	}
+
+	.text-side {
+		height: 180px;
+	    padding: 40px 0 40px 30px;
+	}
+
+	.triangle.bottom::before, .triangle.top::after {
+	    height: 120px !important;
+	}
+
+	h1.with-logo {
+		font-size: 40px;
+	}
+
+	h1.with-logo:before {
+	    width: 40px;
+	    height: 40px;
+	    background-size: 40px 40px;
+	    margin-top: 0;
+	}
+
+	.wsms .text-side h3, .wsms-tep .text-side h3 {
+	    font-size: 18px;
+	    line-height: 1.6;
+	}
+
+	.hardwriting {
+	    font-size: 20px;
+	    line-height: 1.2;
+	}
+
+	.image-side .img {
+		height: 324px;
+	}
+
+	.wsms-tep .text-side {
+	    margin-top: -51px;
+	    height: 250px;
+	}
+}
+
+@media ( min-width: 768px ) and ( max-width: 991px ) {
+	.text-side {
+	    padding: 40px 0 40px 30px;
+	}
+
+	h1.with-logo {
+		font-size: 55px;
+	}
+
+	h1.with-logo:before {
+		width: 54px;
+		height: 54px;
+		background-size: 54px 54px;
+		margin-top: 0;
+	}
+
+	.wsms .text-side h3, .wsms-tep .text-side h3 {
+	    font-size: 22px;
+	    line-height: 1.6;
+	}
+
+	.hardwriting {
+	    font-size: 23px;
+	    line-height: 1.2;
+	}
+	.wsms-tep .text-side h1.with-logo {
+		margin-top: -50px;
+	}
+}
+
+
+@media ( min-width: 992px ) {
+	.wsms-tep .text-side h1.with-logo {
+		margin-top: -20px;
+	}
+}
+
+@media ( min-width: 768px ) {
+	.wsms {
+	    border-right: 10px solid #fff;
+	}
+	.wsms-tep {
+		border-left: 10px solid #fff;
+	}
+}

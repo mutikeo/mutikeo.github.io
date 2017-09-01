@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>West Side Montessori School</title>
+    <!-- Bootstrap -->
+    <link href="./vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.1.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .triangle.bottom:before,
+      .triangle.top:after {
+        height: 158px;
+      }
+    </style>
+    <script>
+      var updateHeight = function () {
+        var rules = document.styleSheets[2];
+        for (j = 0; j < rules.cssRules.length; j++) {
+          var r = rules.cssRules[j];
+          if (r.selectorText.indexOf(".triangle.bottom:before") > -1 || r.selectorText.indexOf(".triangle.bottom::before") > -1 ) {
+            r.style.height = (158 - (window.innerWidth - 768) / 46) + 'px';
+          }
+        }  
+      }
+
+      updateHeight();
+
+      window.onresize = function () {
+        updateHeight();        
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12 wsms">
+          <section class="text-side">
+            <h1 class="with-logo">WSMS</h1>
+            <h3>West Side Montessori School</h3>
+            <i class="hardwriting">...where to begin</i>
+          </section>
+          <section class="image-side">
+            <figure class="triangle bottom">
+              <div class="img img-left"></div>
+            </figure>
+            <button class="btn btn-default">visit site</button>
+          </section>
+        </div>
+        <div class="col-sm-6 col-xs-12 wsms-tep">
+          <section class="image-side">
+            <figure class="triangle top">
+              <div class="img img-right"></div>
+            </figure>
+            <button class="btn btn-default">visit site</button>
+          </section>
+          <section class="text-side">
+            <figure class="triangle bottom">
+            </figure>
+            <h1 class="with-logo">WSMS-TEP</h1>
+            <h3>West Side Montessori School</h3>
+            <h3>Techer Education Program</h3>
+            <i class="hardwriting">...to think, not to be thought for</i>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
