@@ -95,11 +95,13 @@ h1.with-logo:before {
 }
 
 .image-side .img.img-left {
-	background-image: url('../images/2.jpg');
+	background-image: url('../images/left.jpg');
+	background-position: 0 10px;
 }
 
 .image-side .img.img-right {
-	background-image: url('../images/1.jpg');
+	background-image: url('../images/right.jpg');
+	background-position: bottom;
 }
 
 .triangle {
