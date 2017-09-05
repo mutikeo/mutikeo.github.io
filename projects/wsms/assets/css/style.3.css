@@ -11,6 +11,7 @@ body {
 	color: #fff;
 	padding: 0;
 }
+
 .wsms-tep {
 	background: #55B74E;
 	color: #fff;
@@ -99,11 +100,71 @@ body {
     bottom: -20%;
 }
 
+/* Image */
+.img-cursive {
+	margin-left: 20px;
+}
+
 .group-btn {
 	margin-top: 6%;
 }
 
-@media( max-width: 767px ) {
+@media ( max-width: 480px ) {
+	.wsms-tep {
+		margin-top: 20px;
+	}
+
+	.wsms button.btn, .wsms-tep button.btn {
+	    font-size: 14px;
+	    padding: 8px 14px;
+	}
+
+	.text-side {
+		height: 180px;
+	    padding: 40px 0 40px 30px;
+	}
+
+	.triangle.bottom::before, .triangle.top::after {
+	    height: 120px !important;
+	}
+
+	.image-side .img {
+		height: 324px;
+	}
+
+	.wsms-tep .text-side {
+	    margin-top: -20px;
+	    height: 180px;
+	}
+
+	.wsms .img-cursive {
+		width: 60%;
+	}
+
+	.img-logo {
+		width: 80%;
+	}
+
+	.text-side {
+		padding: 30px;
+	}
+
+	.wsms-tep .img-cursive {
+		width: 60%;
+		margin-top: 4px;
+	}
+
+	.wsms button.btn, .wsms-tep button.btn {
+	    font-size: 13px;
+	    padding: 8px 12px;
+	}
+
+	.group-btn .img-cursive {
+	    margin-left: 10px;
+	}
+}
+
+@media ( min-width: 481px ) and ( max-width: 767px ) {
 	.wsms-tep {
 		margin-top: 20px;
 	}
@@ -146,12 +207,13 @@ body {
 	.wsms-tep .img-cursive {
 		width: 60%;
 	}
+
 	.wsms button.btn ,
 	.wsms-tep button.btn {
 	    font-size: 16px;
 	    padding: 8px 12px;
 	}
-	
+
 	.group-btn .img-cursive {
 	    margin-left: 10px;
 	}
@@ -161,11 +223,15 @@ body {
 	.wsms {
 	    border-right: 10px solid #fff;
 	}
+
 	.wsms-tep {
 		border-left: 10px solid #fff;
 	}
-}
 
+	.wsms-tep .img-cursive {
+		margin-top: 0;
+	}
+}
 
 @media ( min-width: 768px ) and ( max-width: 991px ) {
 	.wsms .img-cursive {
@@ -201,13 +267,6 @@ body {
 	}
 }
 
-
-@media ( min-width: 768px ) {
-	.wsms-tep .img-cursive {
-		margin-top: 0;
-	}
-}
-
 @media ( min-width: 992px ) and ( max-width: 1199px ) {
 	.wsms .img-cursive {
 		width: 56%;
@@ -230,7 +289,7 @@ body {
 	}
 }
 
-@media ( min-width: 1200px ) and ( max-width: 1365px ) { 
+@media ( min-width: 1200px ) and ( max-width: 1365px ) {
 	.wsms .img-cursive {
 		width: 56%;
 	}
@@ -252,7 +311,7 @@ body {
 	}
 }
 
-@media ( min-width: 1366px ) { 
+@media ( min-width: 1366px ) {
 	.wsms .img-cursive {
 		width: 40%;
 	}
@@ -272,9 +331,4 @@ body {
 	.wsms-tep .img-cursive {
 		width: 50%;
 	}
-}
-
-/* Image */
-.img-cursive {
-	margin-left: 20px;
 }
