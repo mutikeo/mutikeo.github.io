@@ -42,6 +42,8 @@ body {
     font-size: 20px;
     font-weight: bolder;
     padding: 10px 16px;
+	position: relative;
+	z-index: 9999;
 }
 
 .text-side {
@@ -120,12 +122,12 @@ body {
 	}
 
 	.text-side {
-		height: 180px;
-	    padding: 40px 0 40px 30px;
+		height: 120px;
+		padding: 30px;
 	}
 
 	.triangle.bottom::before, .triangle.top::after {
-	    height: 120px !important;
+        height: 100px !important;
 	}
 
 	.image-side .img {
@@ -134,7 +136,7 @@ body {
 
 	.wsms-tep .text-side {
 	    margin-top: -20px;
-	    height: 180px;
+	    height: 210px;
 	}
 
 	.wsms .img-cursive {
@@ -143,10 +145,6 @@ body {
 
 	.img-logo {
 		width: 80%;
-	}
-
-	.text-side {
-		padding: 30px;
 	}
 
 	.wsms-tep .img-cursive {
@@ -161,6 +159,9 @@ body {
 
 	.group-btn .img-cursive {
 	    margin-left: 10px;
+	}
+	.image-side .img.img-left {
+		background-position: -40px 18px;
 	}
 }
 
