@@ -24,10 +24,23 @@
       // 880: 181
       var updateHeight = function () {
         var rules = document.styleSheets[2];
+        var t = 0;
         for (j = 0; j < rules.cssRules.length; j++) {
           var r = rules.cssRules[j];
           if (r.selectorText.indexOf(".triangle.bottom:before") > -1 || r.selectorText.indexOf(".triangle.bottom::before") > -1 ) {
-            r.style.height = (183 - (window.innerWidth - 768) / 56) + 'px';
+            if (window.innerWidth > 1200) {
+              t = 2;
+            }
+            if (window.innerWidth > 1400) {
+              t = 3;
+            }
+            if (window.innerWidth > 1500) {
+              t = 4;
+            }
+            if (window.innerWidth > 1600) {
+              t = 6;
+            }
+            r.style.height = (183 - (window.innerWidth - 768) / 56 - t) + 'px';
           }
         }
       }
