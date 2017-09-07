@@ -110,7 +110,11 @@ body {
 .group-btn {
 	margin-top: 6%;
 }
-
+@media ( max-width: 320px ) {
+	.wsms .image-side .img.img-left {
+		background-position: -80px 18px;
+	}
+}
 @media ( max-width: 480px ) {
 	.wsms-tep {
 		margin-top: 20px;
