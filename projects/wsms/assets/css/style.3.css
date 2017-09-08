@@ -23,24 +23,24 @@ body {
 	position: relative;
 }
 
-.wsms button.btn, .wsms button.btn:active {
+.wsms .btn, .wsms .btn:active {
 	background-color: #55B74E;
 	color: #fff;
 }
 
-.wsms-tep button.btn, .wsms-tep button.btn:active {
+.wsms-tep .btn, .wsms-tep .btn:active {
 	background-color: #344B9A;
 	color: #fff;
 }
 
-.wsms button.btn ,
-.wsms-tep button.btn {
+.wsms .btn ,
+.wsms-tep .btn {
 	text-transform: uppercase;
     border: none;
     outline: none;
     border-radius: 0;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 500;
     padding: 10px 16px;
 	position: relative;
 	z-index: 9999;
@@ -123,7 +123,7 @@ body {
 		margin-top: 20px;
 	}
 
-	.wsms button.btn, .wsms-tep button.btn {
+	.wsms .btn, .wsms-tep .btn {
 	    font-size: 14px;
 	    padding: 8px 14px;
 	}
@@ -158,7 +158,7 @@ body {
 		width: 60%;
 	}
 
-	.wsms button.btn, .wsms-tep button.btn {
+	.wsms .btn, .wsms-tep .btn {
 	    font-size: 13px;
 	    padding: 8px 12px;
 	}
@@ -180,7 +180,7 @@ body {
 		margin-top: 20px;
 	}
 
-	.wsms button.btn, .wsms-tep button.btn {
+	.wsms .btn, .wsms-tep .btn {
 	    font-size: 14px;
 	    padding: 8px 14px;
 	}
@@ -219,8 +219,8 @@ body {
 		width: 60%;
 	}
 
-	.wsms button.btn ,
-	.wsms-tep button.btn {
+	.wsms .btn ,
+	.wsms-tep .btn {
 	    font-size: 16px;
 	    padding: 8px 12px;
 	}
@@ -268,8 +268,8 @@ body {
 	.wsms-tep .img-cursive {
 		width: 60%;
 	}
-	.wsms button.btn ,
-	.wsms-tep button.btn {
+	.wsms .btn ,
+	.wsms-tep .btn {
 	    font-size: 16px;
 	    padding: 8px 12px;
 	}
